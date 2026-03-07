@@ -2,13 +2,21 @@
 
 > 系统化探索和分析AI智能体方法论的Claude Code技能项目
 
+[![探索报告](https://img.shields.io/badge/📚_探索报告-查看索引-blue)](docs/index.md)
+[![技能定义](https://img.shields.io/badge/🔧_技能定义-SKILL.md-orange)](./claude/skills/agent-methodology-explorer/SKILL.md)
+
+---
+
 ## 📚 探索报告文档库
 
-| # | 洞察目录 | 来源 | 核心主题 | 发布日期 |
-|---|----------|------|----------|----------|
-| 01 | [上下文工程洞察](docs/context-engineering-insight-2026-03-06/) | GitHub | 上下文工程、多智能体架构、记忆系统 | 2026-03-06 |
-| -- | └── [深度报告](docs/context-engineering-insight-2026-03-06/context-engineering-agent-skills-insight.md) | | 完整方法论与模式提取 | |
-| -- | └── [快速参考](docs/context-engineering-insight-2026-03-06/context-engineering-quick-reference.md) | | 原则速查与优化清单 | |
+> 所有洞察报告的完整索引：**[docs/index.md](docs/index.md)**
+
+| # | 洞察主题 | 来源 | 快速预览 |
+|---|----------|------|----------|
+| 02 | [文件系统上下文工程洞察](docs/file-system-context-engineering-2026-03-07/) | arXiv论文 | AIGNE框架、PCR存储模型 |
+| 01 | [上下文工程洞察](docs/context-engineering-insight-2026-03-06/) | GitHub | 87% token减少、工具整合3.5倍提升 |
+
+**📊 查看完整索引** → [docs/index.md](docs/index.md)
 
 ---
 
@@ -23,14 +31,11 @@
 ├── .claude/
 │   └── skills/
 │       └── agent-methodology-explorer/
-│           ├── SKILL.md           # 核心技能定义
-│           ├── evals/             # 测试用例
-│           ├── scripts/           # 辅助脚本
-│           └── references/        # 参考资料
+│           └── SKILL.md           # 核心技能定义
 ├── docs/                          # 探索报告
-│   ├── context-engineering-agent-skills-insight.md
-│   ├── context-engineering-quick-reference.md
-│   └── index.md                  # 文档索引
+│   ├── index.md                   # 📑 文档索引
+│   ├── context-engineering-insight-2026-03-06/
+│   └── file-system-context-engineering-2026-03-07/
 └── README.md
 ```
 
@@ -68,25 +73,15 @@
 - **实施路线图** - 分阶段的实施计划
 - **快速检查清单** - 立即可行的行动项
 
-## 最新洞察
+---
 
-### 🔥 上下文工程 (Context Engineering)
+## 快速导航
 
-**核心发现**：
-- 上下文工程不同于提示工程，它关注管理进入LLM的**所有信息**
-- 通过渐进式披露可实现**87%的token减少**
-- 多智能体的主要价值是**上下文隔离**，而非角色拟人化
-- 工具整合原则：17个工具→2个工具可实现**3.5倍性能提升**
-
-**关键数字**：
-- 83.9% - 工具输出在上下文中的占比（优化重点）
-- 70% - 触发上下文压缩的阈值
-- 15× - 多智能体系统相对于单智能体的token倍数
-
-**立即行动**：
-1. 学习`context-fundamentals`技能
-2. 实施渐进式披露（三层加载结构）
-3. 整合重叠的工具定义
+| 想要... | 前往 |
+|---------|------|
+| 📖 查看所有探索报告 | [docs/index.md](docs/index.md) |
+| 🔧 了解技能定义 | [SKILL.md](.claude/skills/agent-methodology-explorer/SKILL.md) |
+| 🚀 开始第一次探索 | 参考下方示例 |
 
 ---
 
@@ -105,3 +100,7 @@
 ```
 
 这将在`docs/`目录中生成一份全面的中文分析报告。
+
+---
+
+*最后更新: 2026-03-07*
