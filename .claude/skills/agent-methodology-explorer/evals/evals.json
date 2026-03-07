@@ -1,0 +1,23 @@
+{
+  "skill_name": "agent-methodology-explorer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我探索这个GitHub项目：https://github.com/anthropics/anthropic-sdk-typescript，我想了解它的设计模式以及如何在我们的业务中应用",
+      "expected_output": "A structured analysis document with: summary of the SDK's purpose, key architectural patterns, business applicability, and implementation roadmap",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "分析这篇关于agent方法论的文章：https://www.anthropic.com/research/agents，提取核心模式并给出落地建议",
+      "expected_output": "A methodology analysis with: core concepts extracted, reusable patterns table, business application analysis, and step-by-step implementation guide",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我有一份关于多智能体协作的文档在当前目录下的multi-agent.md，帮我探索里面的方法论并提供应用建议",
+      "expected_output": "A document analysis following the standard template: summary, methodology breakdown, pattern extraction, business application, and implementation roadmap",
+      "files": []
+    }
+  ]
+}
