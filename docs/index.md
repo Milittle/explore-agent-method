@@ -16,6 +16,9 @@
 | 02 | [文件系统上下文工程洞察](file-system-context-engineering-2026-03-07/) | arXiv论文 | 文件系统抽象、上下文工程架构 | AIGNE框架、PCR存储模型 |
 | -- | ├── [深度洞察报告](file-system-context-engineering-2026-03-07/file-system-context-engineering-insight.md) | | AFS架构范式 | 可验证、可维护的GenAI系统 |
 | -- | └── [快速参考指南](file-system-context-engineering-2026-03-07/file-system-context-engineering-quick-reference.md) | | 架构决策树 | 工业级实施指南 |
+| 03 | [Anthropic Cookbook 洞察](anthropic-cookbook-2026-03-11/) | GitHub（官方） | 五大工作流模式、SDK四阶段教程、生产级智能体 | 34.7k Stars、10大可复用模式、完整实施路径 |
+| -- | ├── [深度洞察报告](anthropic-cookbook-2026-03-11/anthropic-cookbook-insight.md) | | 三层递进架构模型 | 五大模式+SDK完整分析 |
+| -- | └── [快速参考指南](anthropic-cookbook-2026-03-11/anthropic-cookbook-quick-reference.md) | | 目录导航+决策树 | 3分钟快速启动 |
 
 ---
 
@@ -46,6 +49,18 @@
 4. **可验证性** - 从ad-hoc实践转向系统化软件工程
 
 **实现框架**：AIGNE（开源）提供工业级GenAI系统基础设施
+
+### Anthropic Cookbook (官方最佳实践库)
+
+**问题**：开发者缺乏智能体架构参考实现，无法从示例代码跨越到生产系统
+
+**解决方案**：
+1. **三层递进模型** - 基础能力 → 工作流模式 → 生产级智能体
+2. **五大工作流模式** - Chaining/Routing/Parallelization/Orchestrator-Workers/Evaluator-Optimizer
+3. **SDK 四阶段教程** - 单行研究智能体 → 执行助理 → 可观测性 → SRE
+4. **MCP 集成** - 通过 MCP Server 接入外部系统（Git 13工具、GitHub 100工具）
+
+**规模**：34.7k Stars，500+ Commits，MIT 开源
 
 ---
 
@@ -83,11 +98,11 @@
 
 ## 📈 探索统计
 
-- **已探索资源**: 2个核心资源（GitHub仓库、arXiv论文）
-- **生成报告**: 4份文档（2个洞察 × 2份文档）
-- **提取模式**: 12个核心设计模式
-- **识别反模式**: 12个需要避免的模式
-- **业务场景**: 8个直接应用场景
+- **已探索资源**: 3个核心资源（GitHub仓库 x2、arXiv论文 x1）
+- **生成报告**: 6份文档（3个洞察 × 2份文档）
+- **提取模式**: 22个核心设计模式
+- **识别反模式**: 19个需要避免的模式
+- **业务场景**: 16个直接应用场景
 
 ---
 
@@ -104,4 +119,4 @@
 
 ---
 
-*索引最后更新: 2026年3月7日*
+*索引最后更新: 2026年3月11日*
