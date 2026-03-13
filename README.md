@@ -13,9 +13,9 @@
 
 | # | 洞察主题 | 来源 | 快速预览 |
 |---|----------|------|----------|
+| 04 | [AutoHarness LLM智能体框架](docs/autoharness-llm-agent-2026-03-13/) | arXiv论文 | 自动代码护栏合成、145游戏100%合法率、小模型超越大模型 |
 | 03 | [Anthropic Cookbook 洞察](docs/anthropic-cookbook-2026-03-11/) | GitHub官方 | 五大工作流模式、SDK四阶段、10大可复用模式 |
 | 02 | [文件系统上下文工程洞察](docs/file-system-context-engineering-2026-03-07/) | arXiv论文 | AIGNE框架、PCR存储模型 |
-| 01 | [上下文工程洞察](docs/context-engineering-insight-2026-03-06/) | GitHub | 87% token减少、工具整合3.5倍提升 |
 
 **📊 查看完整索引** → [docs/index.md](docs/index.md)
 
@@ -104,4 +104,4 @@
 
 ---
 
-*最后更新: 2026-03-11*
+*最后更新: 2026-03-13*
