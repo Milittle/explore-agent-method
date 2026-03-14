@@ -22,6 +22,9 @@
 | 04 | [AutoHarness LLM智能体框架](autoharness-llm-agent-2026-03-13/) | arXiv论文 | 自动代码框架合成、非法操作消除、小模型超越大模型 | 145款游戏100%合法率、Flash超越Pro、Policy模式推理零成本 |
 | -- | ├── [深度洞察报告](autoharness-llm-agent-2026-03-13/autoharness-insight.md) | | 6大设计模式、业务迁移路径 | Thompson采样+迭代精化架构 |
 | -- | └── [快速参考指南](autoharness-llm-agent-2026-03-13/autoharness-quick-reference.md) | | 三类Harness选择决策树 | 实施模板+性能对比表 |
+| 05 | [Claude Skills 完整构建指南](claude-skill-building-guide-2026-03-14/) | 官方PDF文档 | Skills系统架构、五大设计模式、MCP+Skills完整方案 | 渐进式三层加载、15-30分钟构建首个技能、90%触发率基准 |
+| -- | ├── [深度洞察报告](claude-skill-building-guide-2026-03-14/claude-skill-building-insight.md) | | 完整技术规范+5大模式+实施路线图 | YAML规范+反模式表+量化成功标准 |
+| -- | └── [快速参考指南](claude-skill-building-guide-2026-03-14/claude-skill-building-quick-reference.md) | | Description公式+排查树+30分钟速建 | 禁止项清单+三端场景速查 |
 
 ---
 
@@ -77,6 +80,18 @@
 
 **验证数据**：145款游戏100%合法率；Gemini-2.5-Flash+Harness胜率56.3% vs Pro 38.2%；Policy模式单人游戏奖励0.870 vs GPT-5.2-High 0.844，推理成本≈$0 vs ~$640
 
+### Claude Skills 构建方法论
+
+**问题**：开发者缺乏标准化方法将领域知识和工作流封装为可复用的 Claude 能力，每次对话需重新解释偏好和流程，MCP 集成用户学习曲线高
+
+**解决方案**：
+1. **渐进式三层披露** - YAML frontmatter（始终加载）→ SKILL.md 正文（按需加载）→ references/ 文件（按需导航），最小化 token 消耗
+2. **五大设计模式** - 顺序工作流 / 多MCP协调 / 迭代精化 / 上下文感知工具选择 / 领域特定智能
+3. **MCP + Skills 完整方案** - MCP 提供"厨房"（工具连接），Skills 提供"菜谱"（工作流知识）
+4. **skill-creator 元技能** - 使用 Claude 自身构建技能，15-30分钟完成首个技能
+
+**关键规范**：description 字段是成败关键（必须含触发短语）；脚本验证优于语言指令；同时启用技能上限 20-50 个
+
 ---
 
 ## 📋 技能映射表
@@ -89,6 +104,9 @@
 | 知识管理 | 记忆系统、BDI心智状态 | 持续学习，关系洞察 |
 | API调用/SQL生成智能体 | AutoHarness代码护栏模式 | 消除非法调用，100%合规率 |
 | 高频规则化任务（RPA/交易） | Harness-as-Policy模式 | 推理零LLM成本，极低延迟 |
+| 企业团队标准化工作流 | Claude Skills + 工作区级部署 | 跨团队输出一致性↑，onboarding↓ |
+| SaaS产品 MCP 集成增值 | MCP + Skills 套装模式 | 用户上手时间↓，支持票量↓，竞争优势↑ |
+| 生产级自动化管道 | Skills API + container.skills | 程序化调用，大规模稳定部署 |
 
 ---
 
@@ -115,11 +133,11 @@
 
 ## 📈 探索统计
 
-- **已探索资源**: 4个核心资源（GitHub仓库 x2、arXiv论文 x2）
-- **生成报告**: 8份文档（4个洞察 × 2份文档）
-- **提取模式**: 28个核心设计模式
-- **识别反模式**: 25个需要避免的模式
-- **业务场景**: 22个直接应用场景
+- **已探索资源**: 5个核心资源（GitHub仓库 x2、arXiv论文 x2、官方PDF文档 x1）
+- **生成报告**: 10份文档（5个洞察 × 2份文档）
+- **提取模式**: 35个核心设计模式
+- **识别反模式**: 32个需要避免的模式
+- **业务场景**: 27个直接应用场景
 
 ---
 
@@ -136,4 +154,4 @@
 
 ---
 
-*索引最后更新: 2026年3月13日*
+*索引最后更新: 2026年3月14日*
