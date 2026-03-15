@@ -423,7 +423,7 @@ response = anthropic.messages.create(
 | [原始 PDF 指南](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf) | 官方完整指南 |
 | [anthropics/skills GitHub](https://github.com/anthropics/skills) | 官方示例技能仓库 |
 | [Agent Skills 介绍博客](https://www.anthropic.com/news/agent-skills) | 官方发布公告 |
-| [Skills API 快速入门](https://docs.anthropic.com/skills-api-quickstart) | API 使用文档 |
-| [工程博客：为真实世界装备智能体](https://www.anthropic.com/engineering/equipping-agents-for-the-real-world) | 深度技术解析 |
+| [Skills API 快速入门-有的地区不支持](https://docs.anthropic.com/skills-api-quickstart) | API 使用文档 |
+| [工程博客：利用Agent Skills为真实世界装备智能体](https://claude.com/blog/equipping-agents-for-the-real-world-with-agent-skills) | 深度技术解析 |
 | skill-creator 技能 | Claude.ai 插件目录内置 / Claude Code 可下载 |
 | 合作伙伴技能目录 | Sentry、Asana、Atlassian、Canva、Figma、Zapier 等 |
