@@ -13,9 +13,9 @@
 
 | # | 洞察主题 | 来源 | 快速预览 |
 |---|----------|------|----------|
+| 06 | [Superpowers 智能体技能框架](docs/superpowers-skill-framework-2026-03-20/) | GitHub | 设计门控+子智能体驱动+TDD刚性约束，101k Stars |
 | 05 | [Claude Skills 完整构建指南](docs/claude-skill-building-guide-2026-03-14/) | 官方PDF文档 | 渐进式三层加载、五大设计模式、MCP+Skills完整方案、15-30分钟速建 |
 | 04 | [AutoHarness LLM智能体框架](docs/autoharness-llm-agent-2026-03-13/) | arXiv论文 | 自动代码护栏合成、145游戏100%合法率、小模型超越大模型 |
-| 03 | [Anthropic Cookbook 洞察](docs/anthropic-cookbook-2026-03-11/) | GitHub官方 | 五大工作流模式、SDK四阶段、10大可复用模式 |
 
 **📊 查看完整索引** → [docs/index.md](docs/index.md)
 
@@ -104,4 +104,4 @@
 
 ---
 
-*最后更新: 2026-03-13*
+*最后更新: 2026-03-20*
