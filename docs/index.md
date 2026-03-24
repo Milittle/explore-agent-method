@@ -28,6 +28,9 @@
 | 06 | [Superpowers 智能体技能框架](superpowers-skill-framework-2026-03-20/) | GitHub | AI编码智能体工作流、15+组合技能、工程纪律强制注入 | 101k Stars、10大可复用模式、设计门控+子智能体驱动开发 |
 | -- | ├── [深度洞察报告](superpowers-skill-framework-2026-03-20/superpowers-insight.md) | | 完整7阶段工作流+10大模式+实施路线图 | 两阶段审查+新鲜子智能体+TDD刚性约束 |
 | -- | └── [快速参考指南](superpowers-skill-framework-2026-03-20/superpowers-quick-reference.md) | | 工作流速查+决策树+30分钟接入 | 反模式清单+场景速查表 |
+| 07 | [Browser-Use Web 智能体框架](browser-use-web-agent-2026-03-24/) | GitHub | 四阶段DOM管道、认知循环Schema、LLM驱动浏览器自动化 | 9大可复用模式、升级干预循环检测、CDP并行采集架构 |
+| -- | ├── [深度洞察报告](browser-use-web-agent-2026-03-24/browser-use-insight.md) | | 完整架构分析+5大核心洞察+实施路线图 | DOM-to-LLM管道+认知循环+安全凭证隔离 |
+| -- | └── [快速参考指南](browser-use-web-agent-2026-03-24/browser-use-quick-reference.md) | | 5分钟快速启动+决策树+生产配置清单 | 常见问题修复+与其他方法论结合点 |
 
 ---
 
@@ -108,6 +111,19 @@
 
 **关键洞察**：将工程纪律从"最佳实践建议"升级为"智能体必须执行的刚性约束"；101k Stars 验证了这一方向的普遍性需求
 
+### Browser-Use Web 智能体框架
+
+**问题**：网页为人类视觉系统设计，原始 HTML 对 LLM 而言充满噪音；浏览器操作需要精确 DOM 引用，单靠 LLM 文本输出无法完成；生产环境需应对循环卡死、速率限制、上下文膨胀等挑战
+
+**解决方案**：
+1. **四阶段 DOM-to-LLM 管道** - CDP 并行采集 → EnhancedDOMTreeNode 构建 → 序列化过滤 → 分页检测，将网页转化为 LLM 友好的结构化表示
+2. **认知循环 Schema** - 强制 `evaluation_previous_goal + memory + next_goal` 字段，迫使 LLM 每步自我评估、维护记忆、明确下步目标
+3. **升级干预模式** - 5/8/12 步三级阈值渐进增强干预提示，平衡"坚持探索"与"放弃死路"
+4. **Fallback LLM + MessageCompaction** - 主备 LLM 自动切换应对速率限制；历史消息压缩控制长任务 token 成本
+5. **域名隔离凭证** - 架构层强制凭证仅注入白名单域名，不依赖提示词安全约束
+
+**关键洞察**：DOM 处理管道质量决定 Web 智能体上限；认知 Schema 设计（而非单纯 prompt）是可靠性的核心；安全必须在架构层而非提示词层保证
+
 ---
 
 ## 📋 技能映射表
@@ -126,6 +142,9 @@
 | AI 辅助软件开发质量保障 | Superpowers 完整工作流 | 设计偏差↓、TDD覆盖↑、假阳性完成率↓ |
 | 复杂遗留系统 Bug 修复 | Superpowers systematic-debugging | 四阶段根因调查，防止随机修复扩散 |
 | 并行特性开发 | Superpowers dispatching-parallel-agents | 独立任务并发，缩短开发周期 |
+| 无 API 的 Web 数据采集/操作 | Browser-Use DOM管道+认知循环 | 替代人工操作，80-95% 时间节省 |
+| 传统 RPA 替代（表单/申报） | Browser-Use + 自定义 Controller | 开发成本↓60-70%，自然语言任务比 CSS 选择器更易维护 |
+| LLM 驱动 E2E UI 测试 | Browser-Use + AgentHistory 审计 | 测试编写↓50%，对 UI 变更更鲁棒 |
 
 ---
 
@@ -152,11 +171,11 @@
 
 ## 📈 探索统计
 
-- **已探索资源**: 6个核心资源（GitHub仓库 x3、arXiv论文 x2、官方PDF文档 x1）
-- **生成报告**: 12份文档（6个洞察 × 2份文档）
-- **提取模式**: 45个核心设计模式
-- **识别反模式**: 42个需要避免的模式
-- **业务场景**: 30个直接应用场景
+- **已探索资源**: 7个核心资源（GitHub仓库 x4、arXiv论文 x2、官方PDF文档 x1）
+- **生成报告**: 14份文档（7个洞察 × 2份文档）
+- **提取模式**: 54个核心设计模式
+- **识别反模式**: 49个需要避免的模式
+- **业务场景**: 33个直接应用场景
 
 ---
 
@@ -173,4 +192,4 @@
 
 ---
 
-*索引最后更新: 2026年3月20日*
+*索引最后更新: 2026年3月24日*
