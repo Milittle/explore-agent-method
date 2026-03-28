@@ -10,30 +10,30 @@
 
 | # | 洞察目录 | 来源 | 核心主题 | 关键洞察 |
 |---|----------|------|----------|----------|
-| 01 | [上下文工程洞察](context-engineering-insight-2026-03-06/) | GitHub | 上下文工程、多智能体、记忆系统 | 87% token减少、工具整合3.5倍提升 |
-| -- | ├── [深度洞察报告](context-engineering-insight-2026-03-06/context-engineering-agent-skills-insight.md) | | 完整方法论分析 | 6大设计模式详解 |
-| -- | └── [快速参考指南](context-engineering-insight-2026-03-06/context-engineering-quick-reference.md) | | 原则速查表 | 5分钟立即行动 |
-| 02 | [文件系统上下文工程洞察](file-system-context-engineering-2026-03-07/) | arXiv论文 | 文件系统抽象、上下文工程架构 | AIGNE框架、PCR存储模型 |
-| -- | ├── [深度洞察报告](file-system-context-engineering-2026-03-07/file-system-context-engineering-insight.md) | | AFS架构范式 | 可验证、可维护的GenAI系统 |
-| -- | └── [快速参考指南](file-system-context-engineering-2026-03-07/file-system-context-engineering-quick-reference.md) | | 架构决策树 | 工业级实施指南 |
-| 03 | [Anthropic Cookbook 洞察](anthropic-cookbook-2026-03-11/) | GitHub（官方） | 五大工作流模式、SDK四阶段教程、生产级智能体 | 34.7k Stars、10大可复用模式、完整实施路径 |
-| -- | ├── [深度洞察报告](anthropic-cookbook-2026-03-11/anthropic-cookbook-insight.md) | | 三层递进架构模型 | 五大模式+SDK完整分析 |
-| -- | └── [快速参考指南](anthropic-cookbook-2026-03-11/anthropic-cookbook-quick-reference.md) | | 目录导航+决策树 | 3分钟快速启动 |
-| 04 | [AutoHarness LLM智能体框架](autoharness-llm-agent-2026-03-13/) | arXiv论文 | 自动代码框架合成、非法操作消除、小模型超越大模型 | 145款游戏100%合法率、Flash超越Pro、Policy模式推理零成本 |
-| -- | ├── [深度洞察报告](autoharness-llm-agent-2026-03-13/autoharness-insight.md) | | 6大设计模式、业务迁移路径 | Thompson采样+迭代精化架构 |
-| -- | └── [快速参考指南](autoharness-llm-agent-2026-03-13/autoharness-quick-reference.md) | | 三类Harness选择决策树 | 实施模板+性能对比表 |
-| 05 | [Claude Skills 完整构建指南](claude-skill-building-guide-2026-03-14/) | 官方PDF文档 | Skills系统架构、五大设计模式、MCP+Skills完整方案 | 渐进式三层加载、15-30分钟构建首个技能、90%触发率基准 |
-| -- | ├── [深度洞察报告](claude-skill-building-guide-2026-03-14/claude-skill-building-insight.md) | | 完整技术规范+5大模式+实施路线图 | YAML规范+反模式表+量化成功标准 |
-| -- | └── [快速参考指南](claude-skill-building-guide-2026-03-14/claude-skill-building-quick-reference.md) | | Description公式+排查树+30分钟速建 | 禁止项清单+三端场景速查 |
-| 06 | [Superpowers 智能体技能框架](superpowers-skill-framework-2026-03-20/) | GitHub | AI编码智能体工作流、15+组合技能、工程纪律强制注入 | 101k Stars、10大可复用模式、设计门控+子智能体驱动开发 |
-| -- | ├── [深度洞察报告](superpowers-skill-framework-2026-03-20/superpowers-insight.md) | | 完整7阶段工作流+10大模式+实施路线图 | 两阶段审查+新鲜子智能体+TDD刚性约束 |
-| -- | └── [快速参考指南](superpowers-skill-framework-2026-03-20/superpowers-quick-reference.md) | | 工作流速查+决策树+30分钟接入 | 反模式清单+场景速查表 |
-| 07 | [Browser-Use Web 智能体框架](browser-use-web-agent-2026-03-24/) | GitHub | 四阶段DOM管道、认知循环Schema、LLM驱动浏览器自动化 | 9大可复用模式、升级干预循环检测、CDP并行采集架构 |
-| -- | ├── [深度洞察报告](browser-use-web-agent-2026-03-24/browser-use-insight.md) | | 完整架构分析+5大核心洞察+实施路线图 | DOM-to-LLM管道+认知循环+安全凭证隔离 |
-| -- | └── [快速参考指南](browser-use-web-agent-2026-03-24/browser-use-quick-reference.md) | | 5分钟快速启动+决策树+生产配置清单 | 常见问题修复+与其他方法论结合点 |
-| 08 | [GSD 工作流系统](get-shit-done-gsd-workflow-2026-03-28/) | GitHub | 元提示、上下文工程、规范驱动开发系统 | 43.7k Stars、10大可复用模式、编排者-子智能体架构 |
-| -- | ├── [深度洞察报告](get-shit-done-gsd-workflow-2026-03-28/gsd-workflow-insight.md) | | 上下文衰减解决方案+完整架构+实施路线图 | 波次并行执行+原子Git提交+验证模式 |
-| -- | └── [快速参考指南](get-shit-done-gsd-workflow-2026-03-28/gsd-workflow-quick-reference.md) | | 命令速查表+决策树+快速实施模板 | Token优化清单+常见问题修复 |
+| 01 | [上下文工程洞察](2026-03-06-context-engineering-insight/) | GitHub | 上下文工程、多智能体、记忆系统 | 87% token减少、工具整合3.5倍提升 |
+| -- | ├── [深度洞察报告](2026-03-06-context-engineering-insight/context-engineering-agent-skills-insight.md) | | 完整方法论分析 | 6大设计模式详解 |
+| -- | └── [快速参考指南](2026-03-06-context-engineering-insight/context-engineering-quick-reference.md) | | 原则速查表 | 5分钟立即行动 |
+| 02 | [文件系统上下文工程洞察](2026-03-07-file-system-context-engineering/) | arXiv论文 | 文件系统抽象、上下文工程架构 | AIGNE框架、PCR存储模型 |
+| -- | ├── [深度洞察报告](2026-03-07-file-system-context-engineering/file-system-context-engineering-insight.md) | | AFS架构范式 | 可验证、可维护的GenAI系统 |
+| -- | └── [快速参考指南](2026-03-07-file-system-context-engineering/file-system-context-engineering-quick-reference.md) | | 架构决策树 | 工业级实施指南 |
+| 03 | [Anthropic Cookbook 洞察](2026-03-11-anthropic-cookbook/) | GitHub（官方） | 五大工作流模式、SDK四阶段教程、生产级智能体 | 34.7k Stars、10大可复用模式、完整实施路径 |
+| -- | ├── [深度洞察报告](2026-03-11-anthropic-cookbook/anthropic-cookbook-insight.md) | | 三层递进架构模型 | 五大模式+SDK完整分析 |
+| -- | └── [快速参考指南](2026-03-11-anthropic-cookbook/anthropic-cookbook-quick-reference.md) | | 目录导航+决策树 | 3分钟快速启动 |
+| 04 | [AutoHarness LLM智能体框架](2026-03-13-autoharness-llm-agent/) | arXiv论文 | 自动代码框架合成、非法操作消除、小模型超越大模型 | 145款游戏100%合法率、Flash超越Pro、Policy模式推理零成本 |
+| -- | ├── [深度洞察报告](2026-03-13-autoharness-llm-agent/autoharness-insight.md) | | 6大设计模式、业务迁移路径 | Thompson采样+迭代精化架构 |
+| -- | └── [快速参考指南](2026-03-13-autoharness-llm-agent/autoharness-quick-reference.md) | | 三类Harness选择决策树 | 实施模板+性能对比表 |
+| 05 | [Claude Skills 完整构建指南](2026-03-14-claude-skill-building-guide/) | 官方PDF文档 | Skills系统架构、五大设计模式、MCP+Skills完整方案 | 渐进式三层加载、15-30分钟构建首个技能、90%触发率基准 |
+| -- | ├── [深度洞察报告](2026-03-14-claude-skill-building-guide/claude-skill-building-insight.md) | | 完整技术规范+5大模式+实施路线图 | YAML规范+反模式表+量化成功标准 |
+| -- | └── [快速参考指南](2026-03-14-claude-skill-building-guide/claude-skill-building-quick-reference.md) | | Description公式+排查树+30分钟速建 | 禁止项清单+三端场景速查 |
+| 06 | [Superpowers 智能体技能框架](2026-03-20-superpowers-skill-framework/) | GitHub | AI编码智能体工作流、15+组合技能、工程纪律强制注入 | 101k Stars、10大可复用模式、设计门控+子智能体驱动开发 |
+| -- | ├── [深度洞察报告](2026-03-20-superpowers-skill-framework/superpowers-insight.md) | | 完整7阶段工作流+10大模式+实施路线图 | 两阶段审查+新鲜子智能体+TDD刚性约束 |
+| -- | └── [快速参考指南](2026-03-20-superpowers-skill-framework/superpowers-quick-reference.md) | | 工作流速查+决策树+30分钟接入 | 反模式清单+场景速查表 |
+| 07 | [Browser-Use Web 智能体框架](2026-03-24-browser-use-web-agent/) | GitHub | 四阶段DOM管道、认知循环Schema、LLM驱动浏览器自动化 | 9大可复用模式、升级干预循环检测、CDP并行采集架构 |
+| -- | ├── [深度洞察报告](2026-03-24-browser-use-web-agent/browser-use-insight.md) | | 完整架构分析+5大核心洞察+实施路线图 | DOM-to-LLM管道+认知循环+安全凭证隔离 |
+| -- | └── [快速参考指南](2026-03-24-browser-use-web-agent/browser-use-quick-reference.md) | | 5分钟快速启动+决策树+生产配置清单 | 常见问题修复+与其他方法论结合点 |
+| 08 | [GSD 工作流系统](2026-03-28-gsd-workflow/) | GitHub | 元提示、上下文工程、规范驱动开发系统 | 43.7k Stars、10大可复用模式、编排者-子智能体架构 |
+| -- | ├── [深度洞察报告](2026-03-28-gsd-workflow/gsd-workflow-insight.md) | | 上下文衰减解决方案+完整架构+实施路线图 | 波次并行执行+原子Git提交+验证模式 |
+| -- | └── [快速参考指南](2026-03-28-gsd-workflow/gsd-workflow-quick-reference.md) | | 命令速查表+决策树+快速实施模板 | Token优化清单+常见问题修复 |
 
 ---
 

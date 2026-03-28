@@ -13,9 +13,9 @@
 
 | # | 洞察主题 | 来源 | 快速预览 |
 |---|----------|------|----------|
-| 08 | [GSD 工作流系统](docs/get-shit-done-gsd-workflow-2026-03-28/) | GitHub | 元提示+上下文工程+规范驱动开发，解决AI编程上下文衰减，43.7k Stars |
-| 07 | [Browser-Use Web 智能体框架](docs/browser-use-web-agent-2026-03-24/) | GitHub | 四阶段DOM管道+认知循环Schema+升级干预循环检测，LLM驱动浏览器自动化 |
-| 06 | [Superpowers 智能体技能框架](docs/superpowers-skill-framework-2026-03-20/) | GitHub | 设计门控+子智能体驱动+TDD刚性约束，101k Stars |
+| 08 | [GSD 工作流系统](docs/2026-03-28-gsd-workflow/) | GitHub | 元提示+上下文工程+规范驱动开发，解决AI编程上下文衰减，43.7k Stars |
+| 07 | [Browser-Use Web 智能体框架](docs/2026-03-24-browser-use-web-agent/) | GitHub | 四阶段DOM管道+认知循环Schema+升级干预循环检测，LLM驱动浏览器自动化 |
+| 06 | [Superpowers 智能体技能框架](docs/2026-03-20-superpowers-skill-framework/) | GitHub | 设计门控+子智能体驱动+TDD刚性约束，101k Stars |
 
 **📊 查看完整索引** → [docs/index.md](docs/index.md)
 
