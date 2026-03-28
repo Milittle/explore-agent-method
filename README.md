@@ -13,9 +13,9 @@
 
 | # | 洞察主题 | 来源 | 快速预览 |
 |---|----------|------|----------|
+| 08 | [GSD 工作流系统](docs/get-shit-done-gsd-workflow-2026-03-28/) | GitHub | 元提示+上下文工程+规范驱动开发，解决AI编程上下文衰减，43.7k Stars |
 | 07 | [Browser-Use Web 智能体框架](docs/browser-use-web-agent-2026-03-24/) | GitHub | 四阶段DOM管道+认知循环Schema+升级干预循环检测，LLM驱动浏览器自动化 |
 | 06 | [Superpowers 智能体技能框架](docs/superpowers-skill-framework-2026-03-20/) | GitHub | 设计门控+子智能体驱动+TDD刚性约束，101k Stars |
-| 05 | [Claude Skills 完整构建指南](docs/claude-skill-building-guide-2026-03-14/) | 官方PDF文档 | 渐进式三层加载、五大设计模式、MCP+Skills完整方案、15-30分钟速建 |
 
 **📊 查看完整索引** → [docs/index.md](docs/index.md)
 
@@ -104,4 +104,4 @@
 
 ---
 
-*最后更新: 2026-03-24*
+*最后更新: 2026-03-28*
