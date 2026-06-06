@@ -245,19 +245,19 @@ description: |
 
 ### Directory Structure
 
-每次洞察创建一个专用子目录，格式：`docs/[洞察名称]-[YYYY-MM-DD]/`
+每次洞察创建一个专用子目录，格式：`docs/[YYYY-MM-DD]-[洞察名称]/`
 
 **目录命名规则**：
 - 使用英文，连字符分隔
 - 名称要能代表洞察的核心主题
-- 例如：`context-engineering-insight-2026-03-06/`, `multi-agent-patterns-2026-03-10/`
+- 例如：`2026-03-06-context-engineering-insight/`, `2026-03-10-multi-agent-patterns/`
 
 ### 文件组织
 
 ```
 docs/
 ├── index.md                          # 总索引（每次洞察后更新）
-├── [洞察名称]-[日期]/
+├── [YYYY-MM-DD]-[洞察名称]/
 │   ├── [洞察标题].md                 # 深度洞察报告（必需）
 │   ├── [快速参考].md                 # 速查手册（可选）
 │   ├── [案例研究].md                 # 具体案例（可选）

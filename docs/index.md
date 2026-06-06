@@ -6,6 +6,14 @@
 
 ## 📊 探索报告列表
 
+### 2026年4月
+
+| # | 洞察目录 | 来源 | 核心主题 | 关键洞察 |
+|---|----------|------|----------|----------|
+| 09 | [Vibe Coding 不是工程](2026-04-02-vibe-coding-not-engineering/) | 博客文章 | 工程前置决策、Additive vs Transformative、LLM 因果推理局限 | 9大被跳过工程领域、demo vs 产品鸿沟、与Superpowers/GSD/Claude Skills 高度互补 |
+| -- | ├── [深度洞察报告](2026-04-02-vibe-coding-not-engineering/vibe-coding-not-engineering-insight.md) | | 完整方法论分析 + 实施路线图 | 工程前置清单 + 反模式表 + 业务映射 |
+| -- | └── [快速参考指南](2026-04-02-vibe-coding-not-engineering/vibe-coding-not-engineering-quick-reference.md) | | 9领域检查清单 + 快速模板 | 5分钟立即行动 + 决策树 |
+
 ### 2026年3月
 
 | # | 洞察目录 | 来源 | 核心主题 | 关键洞察 |
@@ -38,6 +46,18 @@
 ---
 
 ## 🔥 核心发现汇总
+
+### Vibe Coding 与工程纪律（Vibe Coding Is Not Engineering）
+
+**问题**：LLM/agent 代码生成缺乏对运行时系统上下文、业务完整需求和系统因果结构的感知，导致“vibe coding”（直接提示生成代码）只能产出可运行的 demo，却无法构建长期安全、可维护的生产系统。demo 容易，产品难；AI 让写代码变快，但“让系统保持连贯”这件事仍然需要工程判断。
+
+**解决方案**：
+1. **工程前置门控** — 在任何代码生成（无论人工还是 agent）之前，强制完成 invariants（不变量）、identity & uniqueness（同一性）、constraints（约束）、failure modes（失败模式）、boundaries（边界）、contracts（契约）等 9 大领域的显式决策
+2. **Additive vs Transformative 区分** — 新增自包含代码（additive）LLM 较擅长；修改已有系统（transformative）需要因果推理和对现有不变量的理解，LLM 根本弱，必须重度人类判断 + 系统模型
+3. **系统模型持久化 + 上下文工程** — 通过 INVARIANTS.md、BOUNDARIES.md 等工程制品 + 文件系统上下文加载，让 agent “看得到”它本来看不到的系统约束
+4. **人类判断必须中心化** — AI 放大工程产能，但不移除工程判断；最终对 intent、constraints、trade-offs、系统安全的责任仍在人类
+
+**关键验证/影响**：直接解释了 Superpowers 设计门控、GSD 计划-验证阶段、Claude Skills 常驻约束、上下文工程持久化等此前探索的方法论为何必要且有效。为所有 AI 智能体辅助开发实践提供了第一性原理层面的补全框架。
 
 ### 上下文工程 (Context Engineering)
 
@@ -164,6 +184,7 @@
 | SaaS产品 MCP 集成增值 | MCP + Skills 套装模式 | 用户上手时间↓，支持票量↓，竞争优势↑ |
 | 生产级自动化管道 | Skills API + container.skills | 程序化调用，大规模稳定部署 |
 | AI 辅助软件开发质量保障 | Superpowers 完整工作流 | 设计偏差↓、TDD覆盖↑、假阳性完成率↓ |
+| AI 辅助开发工程纪律缺失防护 | Vibe Coding 工程前置 + 9大领域检查清单 | 生产 incident↓、隐性技术债↓、对 AI 生成代码的信任度从“能跑”提升到“知道为什么安全” |
 | 复杂遗留系统 Bug 修复 | Superpowers systematic-debugging | 四阶段根因调查，防止随机修复扩散 |
 | 并行特性开发 | Superpowers dispatching-parallel-agents | 独立任务并发，缩短开发周期 |
 | 无 API 的 Web 数据采集/操作 | Browser-Use DOM管道+认知循环 | 替代人工操作，80-95% 时间节省 |
@@ -200,11 +221,11 @@
 
 ## 📈 探索统计
 
-- **已探索资源**: 8个核心资源（GitHub仓库 x5、arXiv论文 x2、官方PDF文档 x1）
-- **生成报告**: 16份文档（8个洞察 × 2份文档）
-- **提取模式**: 64个核心设计模式
-- **识别反模式**: 59个需要避免的模式
-- **业务场景**: 38个直接应用场景
+- **已探索资源**: 9个核心资源（GitHub仓库 x5、arXiv论文 x2、官方PDF文档 x1、博客文章 x1）
+- **生成报告**: 18份文档（9个洞察 × 2份文档）
+- **提取模式**: 72个核心设计模式
+- **识别反模式**: 66个需要避免的模式
+- **业务场景**: 45个直接应用场景
 
 ---
 
@@ -221,4 +242,4 @@
 
 ---
 
-*索引最后更新: 2026年3月28日*
+*索引最后更新: 2026年4月2日*
