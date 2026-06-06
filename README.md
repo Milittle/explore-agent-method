@@ -13,9 +13,9 @@
 
 | # | 洞察主题 | 来源 | 快速预览 |
 |---|----------|------|----------|
+| 10 | [CLAUDE.md 管理插件](docs/2026-06-06-claude-md-management/) | GitHub 插件 | 6维度量化质量门控 + 双循环维护 + 严格价值过滤 + 审批门控，AI 编码项目记忆卫生基础设施 |
 | 09 | [Vibe Coding 不是工程](docs/2026-04-02-vibe-coding-not-engineering/) | 博客 | 工程前置决策框架、LLM 无法替代因果判断与系统建模，demo 易产品难 |
 | 08 | [GSD 工作流系统](docs/2026-03-28-gsd-workflow/) | GitHub | 元提示+上下文工程+规范驱动开发，解决AI编程上下文衰减，43.7k Stars |
-| 07 | [Browser-Use Web 智能体框架](docs/2026-03-24-browser-use-web-agent/) | GitHub | 四阶段DOM管道+认知循环Schema+升级干预循环检测，LLM驱动浏览器自动化 |
 
 **📊 查看完整索引** → [docs/index.md](docs/index.md)
 
@@ -104,4 +104,4 @@
 
 ---
 
-*最后更新: 2026-04-02*
+*最后更新: 2026-06-06*
