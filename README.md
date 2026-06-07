@@ -13,9 +13,9 @@
 
 | # | 洞察主题 | 来源 | 快速预览 |
 |---|----------|------|----------|
+| 11 | [Claude Code Setup 插件](docs/2026-06-06-claude-code-setup/) | GitHub 插件 | 信号驱动五类自动化推荐、每类Top 1-2渐进披露、只读分析，Claude Code 冷启动配置引擎 |
 | 10 | [CLAUDE.md 管理插件](docs/2026-06-06-claude-md-management/) | GitHub 插件 | 6维度量化质量门控 + 双循环维护 + 严格价值过滤 + 审批门控，AI 编码项目记忆卫生基础设施 |
 | 09 | [Vibe Coding 不是工程](docs/2026-04-02-vibe-coding-not-engineering/) | 博客 | 工程前置决策框架、LLM 无法替代因果判断与系统建模，demo 易产品难 |
-| 08 | [GSD 工作流系统](docs/2026-03-28-gsd-workflow/) | GitHub | 元提示+上下文工程+规范驱动开发，解决AI编程上下文衰减，43.7k Stars |
 
 **📊 查看完整索引** → [docs/index.md](docs/index.md)
 

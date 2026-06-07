@@ -10,6 +10,9 @@
 
 | # | 洞察目录 | 来源 | 核心主题 | 关键洞察 |
 |---|----------|------|----------|----------|
+| 11 | [Claude Code Setup 插件](2026-06-06-claude-code-setup/) | GitHub（官方插件） | 项目感知自动化推荐、五类扩展分层、信号驱动映射、只读分析 | 三阶段工作流（分析→推荐→报告）、每类Top 1-2渐进披露、Hooks/Skills/MCP/Subagents/Plugins 决策框架、与 CLAUDE.md 管理形成配置-维护闭环 |
+| -- | ├── [深度洞察报告](2026-06-06-claude-code-setup/claude-code-setup-insight.md) | | 完整信号映射表 + 9大可复用模式 + 实施路线图 | 五类自动化分类法 + 8大反模式 + 团队 .mcp.json 共享策略 |
+| -- | └── [快速参考指南](2026-06-06-claude-code-setup/claude-code-setup-quick-reference.md) | | 信号速查表 + 决策树 + 30分钟实施模板 | 触发短语 + Frontmatter 矩阵 + 反模式排查 |
 | 10 | [CLAUDE.md 管理插件](2026-06-06-claude-md-management/) | GitHub（官方插件） | 项目记忆卫生、双循环维护、量化质量门控、价值过滤 | 6维度100分rubric、报告先行审批门控、双循环（审计+捕获）、与Superpowers/GSD/Claude Skills 形成完整基础设施闭环 |
 | -- | ├── [深度洞察报告](2026-06-06-claude-md-management/claude-md-management-insight.md) | | 完整5阶段工作流 + 严格过滤原则 + 实施路线图 | 6大可复用模式 + 7大反模式 + 分层策略 |
 | -- | └── [快速参考指南](2026-06-06-claude-md-management/claude-md-management-quick-reference.md) | | 质量评分检查清单 + 内容决策树 + 快速模板 | 5问过滤器 + 立即行动清单 |
@@ -54,6 +57,19 @@
 ---
 
 ## 🔥 核心发现汇总
+
+### Claude Code Setup 与项目感知自动化推荐（Claude Code Setup Plugin）
+
+**问题**：Claude Code 生态提供 Hooks、Skills、MCP、Subagents、Plugins 等大量扩展能力，但开发者面临"选项爆炸"——不知从何配置、推荐与代码库脱节、过早批量安装导致 token 膨胀与团队配置漂移。
+
+**解决方案**：
+1. **三阶段推荐工作流** — Phase 1 代码库信号分析（语言/框架/依赖/目录/现有配置）→ Phase 2 五类自动化映射（参考库 + web search）→ Phase 3 结构化报告输出
+2. **信号驱动映射引擎** — 将可观测特征（Prettier 配置、convex/ 目录、.env 存在等）映射到具体 MCP/Hook/Skill/Subagent/Plugin 推荐，而非静态通用清单
+3. **Top-N 渐进披露** — 默认每类仅 1-2 条最高价值推荐，用户点名单类可扩展至 3-5 条，防止认知过载
+4. **只读分析原则** — 技能仅探测不推荐即改，分析与实施严格分离，用户自主落地或另步请求协助
+5. **五类分层 + 调用控制** — MCP(外部集成) → Skills(工作流) → Hooks(事件自动化) → Subagents(并行审查) → Plugins(预打包)；Skills 通过 frontmatter 区分用户触发/Claude 自动/副作用隔离
+
+**关键价值**：为 Claude Skills 构建指南（如何写技能）、CLAUDE.md 管理（如何维护记忆）、Superpowers（工程纪律执行）、GSD（编排工作流）提供**冷启动配置层**——先"选对自动化组合"，再"写好记忆"和"执行纪律"。复杂度极低（插件即用），适用于所有 Claude Code 用户及团队标准化场景。
 
 ### CLAUDE.md 管理与项目记忆卫生（Claude.md Management Plugin）
 
@@ -215,6 +231,11 @@
 | AI 编程团队一致性和质量保障 | GSD 编排者-子智能体 + 验证模式 | 上下文衰减↓，代码质量↑，清晰的 Git 历史 |
 | 多并行项目/功能分支管理 | GSD 工作流（Workstreams） | 命名空间隔离，独立可验证，系统化合并 |
 | 契约驱动外包/团队协作 | GSD 规范驱动开发（XML提示+验证） | 明确需求/计划/验收标准，可追溯，减少沟通成本 |
+| 新项目 Claude Code 冷启动 | Claude Code Setup 自动化推荐 | 30-60分钟完成基础设施选型，避免盲目试错 |
+| 团队 AI 编码工具链标准化 | Setup 推荐 + .mcp.json 入库 + 共享 skills | 跨成员配置一致，onboarding 时间↓ |
+| 技术栈迁移后重配自动化 | Setup 三阶段重新分析 | 自动化配置与新技术栈对齐 |
+| 安全敏感项目 AI 辅助开发 | Setup 推荐 protection hooks + security-reviewer | 降低密钥泄露与 OWASP 风险 |
+| CI/CD 智能化（lint-fix/测试） | Setup Headless 模式推荐 | 将智能体能力嵌入 pre-commit/CI 管道 |
 
 ---
 
@@ -241,11 +262,11 @@
 
 ## 📈 探索统计
 
-- **已探索资源**: 10个核心资源（GitHub仓库 x6、arXiv论文 x2、官方PDF文档 x1、博客文章 x1）
-- **生成报告**: 20份文档（10个洞察 × 2份文档）
-- **提取模式**: 81个核心设计模式
-- **识别反模式**: 73个需要避免的模式
-- **业务场景**: 49个直接应用场景
+- **已探索资源**: 11个核心资源（GitHub仓库 x7、arXiv论文 x2、官方PDF文档 x1、博客文章 x1）
+- **生成报告**: 22份文档（11个洞察 × 2份文档）
+- **提取模式**: 90个核心设计模式
+- **识别反模式**: 81个需要避免的模式
+- **业务场景**: 55个直接应用场景
 
 ---
 
